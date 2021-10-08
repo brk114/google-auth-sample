@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+ul.mainMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 30vw;
+  background-color: #393;
+}
+
+.mainMenu li {
+  float: left;
+}
+
+/* And so on... */
+.mainMenu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.mainMenu li:hover {
+  background-color: #896325;
+}
+
+.mainMenu li a::hover {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
