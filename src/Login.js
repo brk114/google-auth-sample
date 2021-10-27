@@ -19,10 +19,7 @@ const Login = () => {
       }),
     };
 
-    fetch(
-      "https://localhost:5001/api/CandidateAccount/GoogleLogin",
-      requestOptions
-    )
+    fetch("https://6172d9e8110a740017222e61.mockapi.io/posts", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         debugger;
@@ -46,7 +43,9 @@ const Login = () => {
         onSuccess={gAuthResponseHandler}
         onFailure={error}
         cookiePolicy={"single_host_origin"}
-        isSignedIn={true}
+        // isSignedIn={true}
+        uxMode="redirect"
+        redirectUri="https://localhost:3000/dashboard"
       />
     </div>
   );

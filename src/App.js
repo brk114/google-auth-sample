@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 import Login from "./Login";
+import Dashboard from "./Dashboard";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Logout from "./Logout";
 
 function App() {
   return (
@@ -22,16 +21,6 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
-}
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-      <Logout />
-      <img src={logo} className="App-logo" alt="logo" />
     </div>
   );
 }
